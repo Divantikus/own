@@ -547,6 +547,9 @@ body {
 .move__contact-button:focus {
   display: inline-block;
 }
+.move__contact-button:active {
+  display: inline-block;
+}
 
 .blogs {
   padding: 80px 40px;

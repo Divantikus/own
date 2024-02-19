@@ -426,6 +426,9 @@ body {
     &:focus {
       display: inline-block;
     }
+    &:active {
+      display: inline-block;
+    }
   }
 }
 // --------------------------------------- Блоги
