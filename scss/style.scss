@@ -1,17 +1,22 @@
 @import "reset";
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap");
+@import "_burger";
+
 html,
 body {
   // height: 100%;
+  position: relative;
   font-family: "Syne", sans-serif;
   background: #1a1a1a;
   color: rgba(255, 255, 255, 0.48);
+  // overflow: hidden;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .main {
@@ -22,8 +27,22 @@ body {
   margin: 0px auto;
   max-width: 1440px;
 }
+
+.hide {
+  display: none;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+// .point {
+//   pointer-events: none;
+// }
+
 // -------------------------Меню
 .menu {
+  // position: relative;
   background: #000000;
   padding: 33px 40px;
   @media (max-width: 768px) {

@@ -30,6 +30,7 @@ aside {
 
 html,
 body {
+  height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
@@ -83,8 +84,64 @@ h6 {
   font-weight: 400;
 }
 
+@keyframes show {
+  from {
+    transform: translateX(100%);
+    transform-origin: top left;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes hide {
+  from {
+    transform: translateX(0);
+    transform-origin: top left;
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.anim-show {
+  animation: show 0.8s;
+}
+
+.anim-hide {
+  animation: hide 0.8s;
+}
+
+.burger__body {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background: #1a1a1a;
+}
+.burger__exit-btn {
+  background: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.burger__menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.burger__link {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 30px;
+}
+.burger__item {
+  align-items: center;
+}
+
 html,
 body {
+  position: relative;
   font-family: "Syne", sans-serif;
   background: #1a1a1a;
   color: rgba(255, 255, 255, 0.48);
@@ -95,6 +152,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .main {
@@ -104,6 +162,14 @@ body {
 .container {
   margin: 0px auto;
   max-width: 1440px;
+}
+
+.hide {
+  display: none;
+}
+
+.lock {
+  overflow: hidden;
 }
 
 .menu {

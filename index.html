@@ -10,6 +10,25 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="burger__body hide anim-hide">
+        <ul class="burger__menu">
+          <li class="burger__item">
+            <a href="#" class="burger__link">Home</a>
+          </li>
+          <li class="burger__item">
+            <a href="#" class="burger__link">About</a>
+          </li>
+          <li class="burger__item">
+            <a href="#" class="burger__link">Works</a>
+          </li>
+          <li class="burger__item">
+            <a href="#" class="burger__link">Blog</a>
+          </li>
+          <li class="burger__item">
+            <a href="#" class="burger__link">Hire me</a>
+          </li>
+        </ul>
+      </div>
       <header class="header">
         <nav class="header__menu menu">
           <div class="menu__container container">
@@ -24,9 +43,10 @@
                 <a href="#" class="menu__item">Blog</a>
                 <a href="#" class="menu__item">Hire me</a>
               </div>
-              <button class="menu__burger">
+              <button class="menu__burger" id="burger-on">
                 <img src="img/introduction/burger.svg" alt="burger-icon" />
               </button>
+              <!--  -->
             </div>
           </div>
         </nav>
@@ -545,6 +565,7 @@
           </div>
         </div>
       </footer>
+      <script src="js/script.js"></script>
     </div>
   </body>
 </html>
