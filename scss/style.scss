@@ -101,6 +101,7 @@ body {
 .introduction {
   background: #000000 url("../img/introduction/main_hero.png") no-repeat bottom
     left;
+  height: calc(100vh - 86px);
   background-size: auto 714px;
   @media (max-width: 1440px) {
     background-size: auto

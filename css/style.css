@@ -233,6 +233,7 @@ body {
 
 .introduction {
   background: #000000 url("../img/introduction/main_hero.png") no-repeat bottom left;
+  height: calc(100vh - 86px);
   background-size: auto 714px;
   padding: 85px 0 58px 0;
 }
